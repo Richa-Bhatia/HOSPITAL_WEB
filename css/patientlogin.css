@@ -1,0 +1,107 @@
+
+body{
+    background:#bfefff;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}	
+.patient{
+	width:500px;
+    height:500px;
+    background:darkblue;
+    transform: translate(-10%,-2%);
+    text-align: left;
+    
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+.patientdiv{
+    background: #bfefff;
+    padding-left: 40%;
+    padding-bottom: 50px;
+}
+button{
+	width: 80px;
+    height: 50px;
+    transform: translate(200%,-2%);
+    
+	background-color: green;
+	color: white;
+	font-weight: bold;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin:0;
+    z-index: 50;
+    background:darkblue;
+    margin-right: auto;    
+    margin-left: auto;    
+    width: 100%;    
+    max-width: 100%;    
+    min-width: 0px;
+}
+
+nav .navigation{
+    padding:7px 15px;
+    height:80px;
+    float:left;
+    font-size:42px;
+    transition: .3s;
+    color: ghostwhite;
+    word-spacing: 25px;
+}
+nav ul {
+    list-style: none;
+    float: right;
+    margin:0;
+    padding: 0;
+    display:inline-flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    line-height:65px;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: antiquewhite;
+}
+nav ul li a:hover{
+    background-color: red;
+}h3{
+    color: orange;
+    font-size: 25px;
+    
+}
+.siteslist,.specialitylist,.contactslist{
+    font-size: 25px;
+}
+ul li{
+    padding: 5px;
+}
+.speciality{
+    float: left;
+    margin-left: 150px;
+}
+.sites{
+    margin-left: 100px;
+    padding-right: 100px;
+    color: white;
+    float: center;
+}
+.footer{
+    background:black;
+    color: white;
+    display:flex;
+    position:static;
+    
+}
+.contact{
+    float:right;
+}
+
