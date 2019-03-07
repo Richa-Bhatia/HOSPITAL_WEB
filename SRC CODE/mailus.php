@@ -1,5 +1,5 @@
 <?php
-$db = mysqli_connect("localhost","id7453509_localhost","localhost","id7453509_hospital");
+$db = mysqli_connect("localhost","","localhost","");
 if(!$db)
 {
     die('COULD NOT CONNECT'.mysqli_error($db));

@@ -15,7 +15,7 @@
 
 
 <?php
-   $con=mysqli_connect("localhost","id7453509_localhost","localhost","id7453509_hospital");
+   $con=mysqli_connect("localhost","","localhost","");
    // Check connection
    if(mysqli_connect_errno()) {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
