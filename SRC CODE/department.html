@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css\department.css">
+<link rel="stylesheet" type="text/css" href="css\patientlogin.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body bgcolor="#bfefff">
+  <nav>
+                <div class ="navigation">SARASWATI HOSPITAL</div>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="department.html" >DEPARTMENTS</a></li>
+                    <li><a href="forprofessionals.html" >FOR PROFESSIONALS</a></li>
+                    <li><a href="mail.html">MAIL US</a></li>
+                </ul>
+            </nav><br><br>
+            
+
+
+<div class="slideshow-container">
+<div id="images">
+<div class="mySlides fade">
+  <img src="images\hospital1.jpg" style="width:100%;height: 450px">
+  
+</div>
+
+
+<div class="mySlides fade">
+  <img src="images\hospital2.jpg" style="width:100%;height: 450px;text-align: center">
+  
+</div>
+
+<div class="mySlides fade">
+  <img src="images\hospital3.jpg" style="width:100%;height: 450px">
+  
+</div>
+<div class="mySlides fade">
+  <img src="images\hospital4.jpg" style="width:100%;height: 450px">
+  
+</div>
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+
+<h1 style="color: blue;text-align: center;font-style: italic;padding-top: 50px"> DEPARTMENTS</h1>
+ <div>   
+<div class="container">
+      <img src="images\gyno.png"  alt="" class="image"  >
+     <div class="overlay">
+      <div class="text">Specialist<br>Dr Richa Bhatia<br>Dr Roma Bulani</div>
+    </div>
+  </div>
+  <div class="container">
+      <img src="images\disabled.jpg" alt="" class="image" >
+      <div class="overlay">
+        <div class="text">Specialist<br>Dr Sunanda Kulkarni<br>Dr Raj Mehta</div>
+      </div>
+  </div>
+  <div class="container">
+      <img src="images\neurology.png"  alt="" class="image" >
+      <div class="overlay">
+        <div class="text">Specialist<br>Dr Anjali Prithiani<br>Dr Mohit Makhija</div>
+      </div>
+  </div>
+<br><br>
+</div>
+    <div>
+<div class="container">
+      <img src="images\dental.png"  alt="" class="image"  >
+     <div class="overlay">
+      <div class="text">Specialist<br>Dr Vanita Lahrani<br>Dr Karan Khatwani</div>
+    </div>
+  </div>
+  <div class="container">
+      <img src="images\xray4.png" alt="" class="image" >
+      <div class="overlay">
+        <div class="text">Specialist<br>Dr Kamlesh Parab<br>Dr Anjali Punjabi</div>
+      </div>
+  </div>
+  <div class="container">
+      <img src="images\cardio.png"  alt="" class="image" >
+      <div class="overlay">
+        <div class="text">Specialist<br>Dr Resham Verliani<br>Dr Manoj Ochaney</div>
+      </div>
+  </div>
+
+</div>
+</body>
+</html> 

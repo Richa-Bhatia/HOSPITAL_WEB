@@ -1,0 +1,148 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title> Signup</title>
+		<script type="text/javascript">
+			var today = new Date();
+			var dd = today.getDate();
+			var mm = today.getMonth()+1; //January is 0!
+			var yyyy = today.getFullYear();
+ 			if(dd<10){
+        		dd='0'+dd
+    		} 
+    		if(mm<10){
+        		mm='0'+mm
+   				 } 
+            today=yyyy+'-'+mm+'-'+dd;
+            document.getElementsByClassName("dob").setAttribute("max",today);
+
+
+		</script>
+		<link rel="stylesheet" type="text/css" href="css\patientlogin.css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	
+	</head>
+	<script>
+	function validateForm(){
+		
+		var name=document.forms["myForm"]["name"].value;
+		var mobile_no = document.forms["myForm"]["mobile"].value;
+		var gender = document.forms["myForm"]["gender"];
+
+		//For first name
+		    if (firstName == "") {
+		        alert("First name must be filled out");
+		        return false;
+		    }
+		    if(firstName.match(/^[a-zA-Z]+$/)==null){
+				alert("First Name must contain only alphabets");
+				return false;
+			}
+			
+			//for gender
+			genValue = false;
+	        for(i = 0; i < gender.length; i++){
+	            if(gender[i].checked == true){
+	                genValue = true;    
+	            }
+	        }
+	        if(!genValue){
+	            alert("Please choose the gender");
+	            return false;
+	        }
+		
+		}	
+			
+    
+</script>
+
+	<body>
+		<nav>
+                <div class ="navigation">SARASWATI HOSPITAL</div>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="DEPARTMENT.html" >DEPARTMENTS</a></li>
+                    <li><a href="forprofessionals.html" >FOR PROFESSIONALS</a></li>
+                    <li><a href="mail.html">MAIL US</a></li>
+                </ul>
+            </nav><br><br>
+            <h1 style="color: blue;text-align: center;font-style: italic;padding-top: 50px"> WELCOME</h1>
+		<h3 style="color: blue;text-align: center;font-style: italic"> Precaution is better than cure!</h3>
+		
+<div class="patientdiv">
+		<div class="patient">
+		<form method="post" autocomplete="on" onsubmit="return validateForm()" name="myForm" action="signup.php">
+			
+		<label>NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> 
+		<input type="text" name="name" autofocus required> <br><br>
+		<label>GENDER &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="radio" name="gender" value="m"> Male 
+		<input type="radio" name="gender" value="f"> Female 
+		<input type="radio" name="gender" value="o"> Other <br><br>
+		<label>MOBILE NO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="tel" name="mobile" required><br><br>
+		<label>DATE OF BIRTH</label> <input required type="date" name="dob" min="1920-01-01" max="2018-10-12" ><br/><br/>
+		<label>EMAIL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+		<input type="email" name="email" required><br><br>
+		
+		<label>SELECT COUNTRY:</label> 
+		<select name="country">
+    	<option value="india"> India </option>x
+    	<option value="china"> China </option>
+    	<option value="america"> America </option>
+    	<option value="dubai"> Dubai </option> 
+    	<option value="uae"> UAE </option> 
+  		<option value="nepal"> Nepal </option> 
+  		<option value="uk"> UK </option> <br/><br/>
+  		
+  		</select> <br><br>
+			<label>PASSWORD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+			<input type="password" name="password_1" required><br><br>
+ 		<label>CONFIRM PASSWORD </label><input type="password" name="password_2" required><br><br>
+
+ 		<button type="submit" value="Submit" name="submit_signup" >SUBMIT</button>
+  <br> <br>
+
+
+ </form>
+  </div><br><br><br>
+    </div>
+    
+            <div class="footer">
+    <div class="speciality">
+        <h3> SPECIALITY </h3>
+        <ul style="list-style-type:none" class="specialitylist">
+            <li>500+ DOCTORS</li>
+            <li>400+ BEDS</li>
+            <li>50+ SURGERY ROOMS</li>
+            <li>80+ AMBULANCE SERVICES</li>
+            <li>INBUILT PHARAMCY STORE</li>
+        </ul>
+    </div>
+    
+    <div class="sites">
+     	<h3> SITES </h3>
+        <ul class="siteslist" style="list-style-type:none">
+			<li><i class="fa fa-angle-right"></i><a style="text-decoration:none" href="#">&nbsp &nbsp Tumblr</a></li>
+            <li><i class="fa fa-angle-right"></i><a  style="text-decoration:none" href="#">&nbsp &nbsp Pinterest</a></li>
+            <li><i class="fa fa-angle-right"></i><a style="text-decoration:none" href="#">&nbsp &nbsp Linkedin</a></li>
+            <li><i class="fa fa-angle-right"></i><a style="text-decoration:none" href="#">&nbsp &nbsp Email</a></li>
+        </ul>
+    </div>
+    
+    <div class="contact">
+        <h3><br> CONTACTS </h3>
+        <ul style="list-style-type:none" class="contactslist">
+            <li><i class="fa fa-map-marker"></i> C-BLOCK,  SARASWATI HOSPITAL<br>  4MALAD, MUMBAI-421003.</li>
+            <li><i class="fa fa-envelope"></i> saraswatihospital@gmail.com</li>
+            <li><i class="fa fa-phone"></i>+91 9922587565</li>
+        </ul>
+    </div>
+          
+                </div>
+ 	
+ </body>
+ </html>

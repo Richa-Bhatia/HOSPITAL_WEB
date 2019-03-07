@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <script>
+            window.history.forward();</script>
+        <link rel="stylesheet" type="text/css" href="css\forprofessionals.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
+        
+            <body>
+            <nav>
+                <span class ="navigation">SARASWATI HOSPITAL</span>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="department.html" >DEPARTMENTS</a></li>
+                    <li><a href="forprofessionals.html" >FOR PROFESSIONALS</a></li>
+                    <li><a href="mail.html">MAIL US</a></li>
+                </ul>
+            </nav><br><br>
+            
+                 
+            <div class = "loginclass">
+                <div class="loginprof">
+                    <h1 class="loginp1"> Login Here </h1>
+                    <form class = "form" action="prof.php" method="post">
+                        <div class="dd">
+                         <label>SELECT USER TYPE</label>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                            
+                        <select name="user_type">
+                            <option value="ADMIN">ADMIN</option>
+                            <option value="DOCTOR">DOCTOR</option>
+                        </select>
+                            </div>
+                        <p class="loginpf"> Username</p>
+                        <input type="e-mail" name="email" placeholder="Enter UserName" required>
+                        <p class="loginpf"> Password</p>
+                        <input type="password" name="password" placeholder="Enter Password" required><br>
+                        <input type="submit" name="login_submit" value="Login"><br>
+                    </form>
+                    
+                </div><br><br><br>
+            </div>
+                    
+        </body>
+    </head>
+</html>
